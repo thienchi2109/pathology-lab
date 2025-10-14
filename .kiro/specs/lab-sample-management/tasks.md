@@ -2,13 +2,6 @@
 
 - [x] 1. Project setup and configuration: use Context7 MCP for the up-to-date code snippets
 
-
-
-
-
-
-
-
   - Initialize Next.js 15+ project with TypeScript and App Router
   - Configure Tailwind CSS with custom pastel color theme
   - Install and configure shadcn/ui components
@@ -18,8 +11,10 @@
   - Create project folder structure (app, components, lib, types)
   - _Requirements: 16_
 
-- [ ] 2. Database schema and migrations: use Supabase MCP tools
-  - [ ] 2.1 Create core tables in Supabase
+- [x] 2. Database schema and migrations: use Supabase MCP tools
+
+
+  - [x] 2.1 Create core tables in Supabase
     - Create users table with role field
     - Create kit_batches, kits tables with relationships
     - Create samples table with kit_id foreign key
@@ -28,42 +23,53 @@
     - Create catalog tables (kit_types, sample_types, companies, customers, categories, cost_catalog, settings)
     - Add indexes on frequently queried columns
     - _Requirements: 1, 2, 3, 4, 11, 15_
-
-  - [ ] 2.2 Create database views
+  - [x] 2.2 Create database views
     - Create v_sample_results_wide view for pivoted results
     - Create v_kq_chung view for calculated overall status
     - Create v_lab_records unified view joining kits and samples
     - _Requirements: 5, 3_
+  - [x] 2.3 Create database functions and triggers
 
-  - [ ] 2.3 Create database functions and triggers
     - Create sample_code_seq sequence
     - Create next_sample_code() function for code generation
     - Create trg_touch_updated_at trigger for samples
     - Create trg_sample_kit_used trigger to update kit status
     - _Requirements: 2, 13_
 
-  - [ ] 2.4 Configure RLS policies
+  - [x] 2.4 Configure RLS policies
+
     - Enable RLS on all tables
     - Create editor policies (SELECT, INSERT, UPDATE on relevant tables)
     - Create viewer policies (SELECT only)
     - Test policies with different user roles
     - _Requirements: 9_
 
-- [ ] 3. Authentication setup
-  - [ ] 3.1 Configure Supabase Auth
+- [x] 3. Authentication setup
+
+
+
+
+  - [x] 3.1 Configure Supabase Auth
+
+
     - Enable email/password authentication in Supabase
     - Configure OAuth providers (optional)
     - Set up auth callback route in Next.js
     - _Requirements: 10_
 
-  - [ ] 3.2 Create auth utilities and middleware
+
+
+  - [x] 3.2 Create auth utilities and middleware
+
     - Create Supabase client utilities (server, client, middleware)
     - Create middleware to validate session on protected routes
     - Create auth context/hooks for client components
+
     - Create role-checking utilities
     - _Requirements: 10, 9_
 
-  - [ ] 3.3 Build authentication UI
+  - [x] 3.3 Build authentication UI
+
     - Create login page with Supabase Auth UI
     - Create sign-out functionality
     - Create protected route wrapper component

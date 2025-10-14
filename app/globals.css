@@ -1,30 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  :root {
-    --background: 250 250 250; /* #FAFAFA */
-    --foreground: 31 41 55; /* #1F2937 */
-    --primary: 147 197 253; /* #93C5FD */
-    --primary-foreground: 31 41 55;
-    --secondary: 196 181 253; /* #C4B5FD */
-    --secondary-foreground: 31 41 55;
-    --success: 134 239 172; /* #86EFAC */
-    --warning: 254 215 170; /* #FED7AA */
-    --error: 252 165 165; /* #FCA5A5 */
-    --muted: 243 244 246; /* gray-100 */
-    --muted-foreground: 107 114 128; /* #6B7280 */
-    --border: 229 231 235; /* gray-200 */
-    --radius: 0.5rem;
-  }
+:root {
+  --background: 250 250 250; /* #FAFAFA */
+  --foreground: 31 41 55; /* #1F2937 */
+  --primary: 147 197 253; /* #93C5FD */
+  --primary-foreground: 31 41 55;
+  --secondary: 196 181 253; /* #C4B5FD */
+  --secondary-foreground: 31 41 55;
+  --success: 134 239 172; /* #86EFAC */
+  --warning: 254 215 170; /* #FED7AA */
+  --error: 252 165 165; /* #FCA5A5 */
+  --muted: 243 244 246; /* gray-100 */
+  --muted-foreground: 107 114 128; /* #6B7280 */
+  --border: 229 231 235; /* gray-200 */
+  --radius: 0.5rem;
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+* {
+  border-color: rgb(var(--border));
+}
+
+body {
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
 }
