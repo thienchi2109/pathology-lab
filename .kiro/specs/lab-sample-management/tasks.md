@@ -127,17 +127,14 @@
     - _Requirements: 15_
 
   - [x] 5.2 Write API tests for dictionary endpoints (deferred to Task 17)
-
-
-
-
     - Test successful responses
     - Test search functionality
     - Test error cases
     - _Requirements: 15_
 
 - [ ] 6. Kit inventory management
-  - [ ] 6.1 Create kit management API routes
+  - [x] 6.1 Create kit management API routes
+
 
     - Implement POST /api/kits/bulk-create with quantity validation (≤100)
     - Implement POST /api/kits/bulk-adjust with stock validation
@@ -145,7 +142,7 @@
     - Add error handling for business rules (422, 409 errors)
     - _Requirements: 1_
 
-  - [ ] 6.2 Build kit batch creation form
+  - [ ] 6.2 Build kit batch creation form (off-canvas sheet form)
     - Create KitBatchForm component with validation
     - Add quantity input with max 100 validation
     - Add batch information fields
@@ -224,7 +221,7 @@
     - Test max 10 images limit
     - _Requirements: 4_
 
-- [ ] 9. Sample data entry form
+- [ ] 9. Sample data entry form (off-canvas sheet form)
   - [ ] 9.1 Build multi-section sample form
     - Create SampleForm with kit selection section
     - Add metadata section with 20-30 fields

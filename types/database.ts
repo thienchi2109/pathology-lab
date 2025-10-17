@@ -77,3 +77,34 @@ export interface User {
   created_at: string;
   updated_at: string;
 }
+
+// Kit management types
+export type KitStatus = 'in_stock' | 'assigned' | 'used' | 'void' | 'expired' | 'lost';
+
+export interface KitBatch {
+  id: string;
+  batch_code: string;
+  kit_type_id: string;
+  supplier: string;
+  purchased_at: string;
+  unit_cost: number;
+  quantity: number;
+  expires_at: string | null;
+  note: string | null;
+  created_at: string;
+  updated_at: string;
+  kit_type?: KitType;
+}
+
+export interface Kit {
+  id: string;
+  batch_id: string;
+  kit_code: string;
+  status: KitStatus;
+  assigned_at: string | null;
+  tested_at: string | null;
+  note: string | null;
+  created_at: string;
+  updated_at: string;
+  batch?: KitBatch;
+}
