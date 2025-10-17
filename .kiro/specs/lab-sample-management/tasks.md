@@ -87,15 +87,15 @@
   - [ ] 4.2 Create layout components
     - Create AppShell with responsive layout
     - Create sticky Header with transparency and backdrop-blur
-    - Create Sidebar for desktop (≥1024px)
+    - Create sticky Header navigation bar for desktop (≥1024px)
     - Create MobileNav bottom navigation (<1024px)
     - Add role-based navigation items
     - _Requirements: 12_
 
-  - [ ] 4.3 Customize shadcn/ui components
+  - [ ] 4.3 Customize shadcn/ui components: glassmorphism design language
     - Install base shadcn/ui components (button, card, input, select, etc.)
     - Customize component styles with pastel colors
-    - Create reusable form components
+    - Create reusable form components: off-canvas sheet that slides from the right side
     - Create loading and error state components
     - _Requirements: 12_
 
