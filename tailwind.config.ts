@@ -41,10 +41,33 @@ const config: Config = {
       fontFamily: {
         sans: ["Inter", "sans-serif"],
       },
+      fontSize: {
+        'small': '14px',
+        'body': '16px',
+        'h3': '20px',
+        'h2': '24px',
+        'h1': '32px',
+      },
+      fontWeight: {
+        'body': '400',
+        'heading': '600',
+      },
+      spacing: {
+        '18': '4.5rem',   // 72px
+        '22': '5.5rem',   // 88px
+        '26': '6.5rem',   // 104px
+        '30': '7.5rem',   // 120px
+      },
       borderRadius: {
+        'button': '8px',
+        'card': '8px',
+        'modal': '12px',
         lg: "12px",
         md: "8px",
         sm: "4px",
+      },
+      backdropBlur: {
+        xs: '2px',
       },
       animation: {
         "fade-in": "fadeIn 0.6s ease-out",

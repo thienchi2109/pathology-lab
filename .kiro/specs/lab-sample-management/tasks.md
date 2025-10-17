@@ -76,15 +76,22 @@
     - Add role-based UI element visibility
     - _Requirements: 10_
 
-- [ ] 4. Design system and layout components
-  - [ ] 4.1 Configure Tailwind theme
+- [x] 4. Design system and layout components
+
+
+
+  - [x] 4.1 Configure Tailwind theme
+
+
     - Extend Tailwind config with pastel color palette
     - Configure typography settings (Inter font)
     - Set up custom spacing and border radius
     - Add backdrop-blur utilities
     - _Requirements: 12_
 
-  - [ ] 4.2 Create layout components
+  - [x] 4.2 Create layout components
+
+
     - Create AppShell with responsive layout
     - Create sticky Header with transparency and backdrop-blur
     - Create sticky Header navigation bar for desktop (≥1024px)
@@ -92,7 +99,9 @@
     - Add role-based navigation items
     - _Requirements: 12_
 
-  - [ ] 4.3 Customize shadcn/ui components: glassmorphism design language
+  - [x] 4.3 Customize shadcn/ui components: glassmorphism design language
+
+
     - Install base shadcn/ui components (button, card, input, select, etc.)
     - Customize component styles with pastel colors
     - Create reusable form components: off-canvas sheet that slides from the right side
