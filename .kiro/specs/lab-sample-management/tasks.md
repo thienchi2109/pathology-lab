@@ -1,5 +1,11 @@
 # Implementation Plan
 
+**Current Status**: Tasks 1-5 complete (50%). Ready for Task 6 (Kit Inventory).  
+**Test Users**: `editor@lab.local` / `Test123!` and `viewer@lab.local` / `Test123!`  
+**Test APIs**: See `scripts/test-api-dicts.md` for testing dictionary endpoints.
+
+---
+
 - [x] 1. Project setup and configuration: use Context7 MCP for the up-to-date code snippets
 
   - Initialize Next.js 15+ project with TypeScript and App Router
@@ -80,6 +86,7 @@
 
 
 
+
   - [x] 4.1 Configure Tailwind theme
 
 
@@ -108,18 +115,19 @@
     - Create loading and error state components
     - _Requirements: 12_
 
-- [ ] 5. API routes for dictionaries and catalogs
-  - [ ] 5.1 Create dictionary endpoints
+- [x] 5. API routes for dictionaries and catalogs
+  - [x] 5.1 Create dictionary endpoints
     - Implement GET /api/dicts/kit-types
     - Implement GET /api/dicts/sample-types
     - Implement GET /api/dicts/companies with search
     - Implement GET /api/dicts/customers with search
     - Implement GET /api/dicts/categories
     - Implement GET /api/dicts/costs
-    - Add server-side caching for reference data
+    - Add server-side caching for reference data (deferred to Task 16)
     - _Requirements: 15_
 
-  - [ ]* 5.2 Write API tests for dictionary endpoints
+  - [ ] 5.2 Write API tests for dictionary endpoints (deferred to Task 17)
+
     - Test successful responses
     - Test search functionality
     - Test error cases
@@ -141,7 +149,8 @@
     - Show success/error messages
     - _Requirements: 1, 6_
 
-  - [ ]* 6.3 Write tests for kit management
+  - [ ] 6.3 Write tests for kit management
+
     - Test bulk create with valid/invalid quantities
     - Test stock adjustment logic
     - Test availability queries
