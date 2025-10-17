@@ -126,7 +126,10 @@
     - Add server-side caching for reference data (deferred to Task 16)
     - _Requirements: 15_
 
-  - [ ] 5.2 Write API tests for dictionary endpoints (deferred to Task 17)
+  - [x] 5.2 Write API tests for dictionary endpoints (deferred to Task 17)
+
+
+
 
     - Test successful responses
     - Test search functionality
@@ -135,6 +138,7 @@
 
 - [ ] 6. Kit inventory management
   - [ ] 6.1 Create kit management API routes
+
     - Implement POST /api/kits/bulk-create with quantity validation (≤100)
     - Implement POST /api/kits/bulk-adjust with stock validation
     - Implement GET /api/kits/availability
