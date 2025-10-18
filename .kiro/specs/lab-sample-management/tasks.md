@@ -134,8 +134,6 @@
 
 - [ ] 6. Kit inventory management
   - [x] 6.1 Create kit management API routes
-
-
     - Implement POST /api/kits/bulk-create with quantity validation (≤100)
     - Implement POST /api/kits/bulk-adjust with stock validation
     - Implement GET /api/kits/availability
