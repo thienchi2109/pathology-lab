@@ -1,10 +1,21 @@
+"use client";
+
+import { useState } from "react";
 import { AppShell } from "@/components/layout";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { FlaskConical, Package, BarChart3, TrendingUp } from "lucide-react";
+import { KitBatchForm } from "@/components/forms";
 
 export default function DashboardPage() {
+  const [kitBatchFormOpen, setKitBatchFormOpen] = useState(false);
+
+  const handleKitBatchSuccess = () => {
+    // Refresh data or show success message
+    console.log("Kit batch created successfully");
+  };
+
   return (
     <AppShell>
       <div className="space-y-6">
@@ -140,13 +151,25 @@ export default function DashboardPage() {
           <CardContent>
             <div className="flex flex-wrap gap-3">
               <Button>Create New Sample</Button>
-              <Button variant="secondary">Add Kit Batch</Button>
+              <Button 
+                variant="secondary"
+                onClick={() => setKitBatchFormOpen(true)}
+              >
+                Add Kit Batch
+              </Button>
               <Button variant="outline">View Reports</Button>
               <Button variant="outline">Export Data</Button>
             </div>
           </CardContent>
         </Card>
       </div>
+
+      {/* Kit Batch Form */}
+      <KitBatchForm
+        open={kitBatchFormOpen}
+        onOpenChange={setKitBatchFormOpen}
+        onSuccess={handleKitBatchSuccess}
+      />
     </AppShell>
   );
 }

@@ -132,7 +132,7 @@
     - Test error cases
     - _Requirements: 15_
 
-- [ ] 6. Kit inventory management
+- [x] 6. Kit inventory management
   - [x] 6.1 Create kit management API routes
     - Implement POST /api/kits/bulk-create with quantity validation (≤100)
     - Implement POST /api/kits/bulk-adjust with stock validation
@@ -140,7 +140,8 @@
     - Add error handling for business rules (422, 409 errors)
     - _Requirements: 1_
 
-  - [ ] 6.2 Build kit batch creation form (off-canvas sheet form)
+  - [x] 6.2 Build kit batch creation form (off-canvas sheet form)
+
     - Create KitBatchForm component with validation
     - Add quantity input with max 100 validation
     - Add batch information fields
@@ -148,15 +149,22 @@
     - Show success/error messages
     - _Requirements: 1, 6_
 
-  - [ ] 6.3 Write tests for kit management
+  - [x] 6.3 Write tests for kit management
+
 
     - Test bulk create with valid/invalid quantities
     - Test stock adjustment logic
     - Test availability queries
     - _Requirements: 1_
 
-- [ ] 7. Sample management API
-  - [ ] 7.1 Create sample CRUD endpoints
+- [x] 7. Sample management API
+
+
+
+
+
+  - [x] 7.1 Create sample CRUD endpoints
+
     - Implement GET /api/samples/next-code with date parameter
     - Implement POST /api/samples with auto-assign logic
     - Implement GET /api/samples/:id
@@ -165,13 +173,17 @@
     - Add validation for all inputs
     - _Requirements: 2, 3_
 
-  - [ ] 7.2 Implement sample code generation
+
+  - [x] 7.2 Implement sample code generation
+
     - Use next_sample_code() database function
     - Format as T<MM>_<#####>
     - Handle sequence generation
     - _Requirements: 2_
 
-  - [ ] 7.3 Implement KQ_CHUNG calculation
+
+  - [x] 7.3 Implement KQ_CHUNG calculation
+
     - Create GET /api/samples/:id/report-message endpoint
     - Calculate overall status from results
     - Generate formatted message with severity levels
