@@ -231,8 +231,12 @@
     - Test max 10 images limit
     - _Requirements: 4_
 
-- [ ] 9. Sample data entry form (off-canvas sheet form)
-  - [ ] 9.1 Build multi-section sample form
+- [-] 9. Sample data entry form (off-canvas sheet form)
+
+
+  - [x] 9.1 Build multi-section sample form
+
+
     - Create SampleForm with kit selection section
     - Add metadata section with 20-30 fields
     - Add results section with 10-15 metrics
@@ -240,14 +244,24 @@
     - Organize fields in logical groups
     - _Requirements: 2, 3, 4, 6_
 
-  - [ ] 9.2 Implement form validation
+  - [x] 9.2 Implement form validation
+
+
+
+
+
     - Add Zod schema for all fields
     - Implement real-time validation with React Hook Form
     - Show clear error messages
     - Validate required fields and data types
     - _Requirements: 6_
 
-  - [ ] 9.3 Add autosave functionality
+  - [x] 9.3 Add autosave functionality
+
+
+
+
+
     - Implement draft autosave every 30 seconds
     - Store drafts in localStorage or database
     - Allow resuming from draft

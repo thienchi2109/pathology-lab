@@ -12,7 +12,7 @@ import {
 interface FormSheetProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
-  title: string;
+  title: string | ReactNode;
   description?: string;
   children: ReactNode;
   side?: "left" | "right" | "top" | "bottom";
